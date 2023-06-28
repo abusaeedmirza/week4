@@ -20,11 +20,24 @@
     <link rel="stylesheet" type="text/css" href="src/styles.css" />
     <meta charset="UTF-8" />
   </head>
-  <form id="search-form">
-    <label for="input-show">Movie</label><br />
-    <input type="text" id="input-show" name="input-show" /><br />
-    <input type="submit" id="submit-data" value="Submit" />
-  </form>
+
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Show name</a>
+      <form class="d-flex" role="search" id="search-form">
+        <input
+          class="form-control me-2"
+          id="input-show"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" id="submit-data" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
   <div id="show-here"></div>
 
   <body>
